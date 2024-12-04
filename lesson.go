@@ -1,12 +1,14 @@
 package main
 
-import (
-	"fmt"
-	"os/user"
-	"time"
+import "fmt"
+
+const pi = 3.14
+
+const (
+	Username = "test_user"
+	Password = "test_pass"
 )
 
 func main() {
-	fmt.Println("Hello World!", time.Now())
-	fmt.Println(user.Current())
+	fmt.Println(pi, Username, Password)
 }
