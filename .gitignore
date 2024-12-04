@@ -1,0 +1,14 @@
+# Goのビルド関連ファイル
+*.exe
+*.test
+*.out
+
+# GoLand（JetBrains）関連の設定ファイル
+.idea/
+
+# モジュールの依存ファイル
+/vendor/
+
+# ログファイルや一時ファイル
+*.log
+*.tmp
