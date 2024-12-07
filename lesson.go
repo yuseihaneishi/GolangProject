@@ -2,21 +2,17 @@ package main
 
 import "fmt"
 
-func by2(num int) string {
-	if num%2 == 0 {
-		return "ok"
-	} else {
-		return "no"
-	}
-}
-
 func main() {
-	result := by2(10)
-	if result == "ok" {
-		fmt.Println("great")
-	}
+	for i := 0; i < 10; i++ {
+		if i == 3 {
+			fmt.Println("continue")
+			continue
+		}
 
-	if result2 := by2(10); result2 == "ok" {
-		fmt.Println("great 2")
+		if i > 5 {
+			fmt.Println("break")
+			break
+		}
+		fmt.Println(i)
 	}
 }
