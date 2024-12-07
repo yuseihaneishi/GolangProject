@@ -2,14 +2,17 @@ package main
 
 import "fmt"
 
-func foo(params ...int) {
-	fmt.Println(len(params), params)
-	for _, param := range params {
-		fmt.Println(param)
-	}
-}
-
 func main() {
-	foo(1, 2, 3, 4, 5)
-	foo(1, 2, 3)
+	f := 1.11
+	i := int(f)
+	fmt.Printf("%T %v\n", i, i)
+
+	s := []int{1, 2, 3}
+	fmt.Println(s[1:])
+
+	m := map[int]int{
+		1: 200,
+		2: 300,
+	}
+	fmt.Println(m)
 }
