@@ -2,17 +2,21 @@ package main
 
 import "fmt"
 
-func main() {
-	f := 1.11
-	i := int(f)
-	fmt.Printf("%T %v\n", i, i)
-
-	s := []int{1, 2, 3}
-	fmt.Println(s[1:])
-
-	m := map[int]int{
-		1: 200,
-		2: 300,
+func by2(num int) string {
+	if num%2 == 0 {
+		return "ok"
+	} else {
+		return "no"
 	}
-	fmt.Println(m)
+}
+
+func main() {
+	result := by2(10)
+	if result == "ok" {
+		fmt.Println("great")
+	}
+
+	if result2 := by2(10); result2 == "ok" {
+		fmt.Println("great 2")
+	}
 }
