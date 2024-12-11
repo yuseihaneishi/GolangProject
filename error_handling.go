@@ -9,17 +9,18 @@ import (
 func main() {
 	file, err := os.Open("./lesson.go")
 	if err != nil {
-		log.Fatalln("Error")
+		log.Fatalln("Error!")
 	}
 	defer file.Close()
-	date := make([]byte, 100)
-	count, err := file.Read(date)
+	data := make([]byte, 100)
+	count, err := file.Read(data)
 	if err != nil {
 		log.Fatalln("Error")
 	}
-	fmt.Println(count, string(date))
+	fmt.Println(count, string(data))
 
 	if err = os.Chdir("test"); err != nil {
 		log.Fatalln("Error")
 	}
+
 }
