@@ -11,7 +11,7 @@ func do(i interface{}) {
 
 		fmt.Println(v + "!")
 	default:
-		fmt.Printf("I don't know %T\n", i)
+		fmt.Printf("I don't know %T\n", v)
 	}
 }
 
