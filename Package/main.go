@@ -1,7 +1,7 @@
 package main
 
 import (
-	"awesomeProject/package/package/mylib"
+	"awesomeProject/mylib"
 	"fmt"
 )
 
